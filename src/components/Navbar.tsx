@@ -39,6 +39,7 @@ const Navbar = () => {
           <li><NavLink to="/servicios" className={navClasses}>Servicios</NavLink></li>
           <li><NavLink to="/nosotros" className={navClasses}>Nosotros</NavLink></li>
           <li><NavLink to="/contacto" className={navClasses}>Contacto</NavLink></li>
+          <li><Link to="/servicioscard" className="hover:text-yellow-400">ServiciosCard</Link></li>
         </ul>
       </div>
 
