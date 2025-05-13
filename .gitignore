@@ -1,24 +1,75 @@
-# Logs
-logs
+# ==============================
+# Directorios a ignorar
+# ==============================
+node_modules/
+dist/
+.temp/
+.cache/
+.idea/
+.vscode/
+coverage/
+
+# ==============================
+# Archivos de entorno y configuración
+# ==============================
+.env
+.env.local
+.env.*
+*.env
+.env.development
+.env.production
+.env.test
+
+# ==============================
+# Logs y reportes
+# ==============================
 *.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# ==============================
+# Archivos del sistema y editores
+# ==============================
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+*.swp
+*.swo
+*~
+~$*
+
+# ==============================
+# Dependencias y paquetes
+# ==============================
+jspm_packages/
+*.tgz
+*.gz
+*.zip
+*.7z
+
+# ==============================
+# Archivos de construcción
+# ==============================
+build/
+out/
+.next/
+.nuxt/
+
+# ==============================
+# Vite específico
+# ==============================
+.vite/
+*.vite
+
+# ==============================
+# TypeScript
+# ==============================
+*.tsbuildinfo
+
+# ==============================
+# Testing
+# ==============================
+/junit.xml
+/coverage/
+.nyc_output/
