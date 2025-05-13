@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="text-xl font-bold text-yellow-400">
-          FABRICONSTRUC
+           <img src="./logo/fabriconstruc_dark.png" alt="Fabriconstruc Logo" className="w-60 h-auto" />
         </Link>
 
         {/* Botón para móviles */}

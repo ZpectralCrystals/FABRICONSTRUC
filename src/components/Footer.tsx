@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white px-6 py-10 mt-12">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 text-sm">
         {/* Empresa */}
         <div>
-          <h4 className="text-yellow-400 font-bold text-lg mb-2">FABRICONSTRUC</h4>
+          <img src="./logo/fabriconstruc_dark.png" alt="Fabriconstruc Logo" className="w-60 h-auto mb-3 " />
           <p>
             Soluciones en estructuras metálicas, obras civiles e ingeniería en el sur del Perú.
           </p>
