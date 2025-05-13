@@ -1,0 +1,61 @@
+# Carpetas que NO deben subirse
+node_modules/
+dist/
+build/
+.coverage/
+.nyc_output/
+.vscode/
+.idea/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# Archivos de caché
+.cache/
+.temp/
+.tmp/
+
+# Paquetes de IDEs
+*.swp
+*.swo
+
+# Testing
+/coverage
+
+# Paquetes de sistema operativo
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
