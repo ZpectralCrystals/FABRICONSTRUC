@@ -40,6 +40,7 @@ const Navbar = () => {
           <li><NavLink to="/nosotros" className={navClasses}>Nosotros</NavLink></li>
           <li><NavLink to="/contacto" className={navClasses}>Contacto</NavLink></li>
           <li><NavLink to="/servicioscard" className={navClasses}>ServiciosCard</NavLink></li>
+          <li><NavLink to="/clientes" className={navClasses}>Clientes</NavLink></li>
         </ul>
       </div>
 
@@ -51,7 +52,8 @@ const Navbar = () => {
             <li><NavLink to="/servicios" onClick={toggleMenu} className={navClasses}>Servicios</NavLink></li>
             <li><NavLink to="/nosotros" onClick={toggleMenu} className={navClasses}>Nosotros</NavLink></li>
             <li><NavLink to="/contacto" onClick={toggleMenu} className={navClasses}>Contacto</NavLink></li>
-            <li><NavLink to="/contacto" onClick={toggleMenu} className={navClasses}>ServiciosCard</NavLink></li>
+            <li><NavLink to="/servicioscard" onClick={toggleMenu} className={navClasses}>ServiciosCard</NavLink></li>
+            <li><NavLink to="/clientes" onClick={toggleMenu} className={navClasses}>ServiciosCard</NavLink></li>
           </ul>
         </div>
       )}
