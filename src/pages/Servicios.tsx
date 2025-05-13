@@ -1,8 +1,8 @@
 const Servicios = () => {
   return (
     <section className="px-6 py-12">
-      <h2 className="text-3xl font-bold text-gray-800 mb-6">Nuestros Servicios</h2>
-      <div className="space-y-8">
+      <h2 className="text-3xl font-bold mb-6 text-center">Nuestros Servicios</h2>
+      <div className="max-w-5xl mx-auto text-gray-800">
         <div>
           <h3 className="text-xl font-semibold text-gray-700">Obras Civiles</h3>
           <ul className="list-disc list-inside text-gray-600">

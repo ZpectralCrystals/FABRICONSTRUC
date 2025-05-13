@@ -29,8 +29,8 @@ const Clientes = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {clientes.map((cliente, index) => (
           <div key={index} className="flex flex-col items-center bg-white rounded shadow p-4">
-            <img src={cliente.logo} alt={cliente.nombre} className="h-24 object-contain mb-2" />
-            <p className="text-sm text-gray-700 font-medium">{cliente.nombre}</p>
+            <img src={cliente.logo} alt={" "} className="h-24 object-contain mb-2" />
+            <p className="text-sm text-gray-700 font-medium"></p>
           </div>
         ))}
       </div>

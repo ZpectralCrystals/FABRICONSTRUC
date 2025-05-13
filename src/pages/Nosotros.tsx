@@ -1,6 +1,6 @@
 const Nosotros = () => {
   return (
-    <section className="px-6 py-12 bg-gray-100">
+    <section className="px-6 py-12">
       <div className="max-w-5xl mx-auto text-gray-800">
         <h2 className="text-3xl font-bold mb-6 text-center">¿Quiénes Somos?</h2>
         <p className="mb-6 text-lg text-justify">
