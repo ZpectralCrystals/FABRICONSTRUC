@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="text-xl font-bold text-yellow-400">
-           <img src="./logo/fabriconstruc_dark.png" alt="Fabriconstruc Logo" className="w-60 h-auto" />
+          <img src="/logo/fabriconstruc_dark.png" alt="Fabriconstruc Logo" className="w-60 h-auto" />
         </Link>
 
         {/* Botón para móviles */}
@@ -22,13 +22,24 @@ const Navbar = () => {
           aria-label="Menú"
         >
           <svg
-            className="w-6 h-6 fill-current"
+            className="w-6 h-6 fill-current text-white"
             viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
             {isOpen ? (
-              <path d="M18 6L6 18M6 6l12 12" />
+              // Ícono ✕
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.11 5.7A1 1 0 1 0 5.7 7.11L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z"
+              />
             ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
+              // Ícono ☰
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+              />
             )}
           </svg>
         </button>
@@ -53,7 +64,7 @@ const Navbar = () => {
             <li><NavLink to="/nosotros" onClick={toggleMenu} className={navClasses}>Nosotros</NavLink></li>
             <li><NavLink to="/contacto" onClick={toggleMenu} className={navClasses}>Contacto</NavLink></li>
             <li><NavLink to="/servicioscard" onClick={toggleMenu} className={navClasses}>ServiciosCard</NavLink></li>
-            <li><NavLink to="/clientes" onClick={toggleMenu} className={navClasses}>ServiciosCard</NavLink></li>
+            <li><NavLink to="/clientes" onClick={toggleMenu} className={navClasses}>Clientes</NavLink></li>
           </ul>
         </div>
       )}
@@ -62,3 +73,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
