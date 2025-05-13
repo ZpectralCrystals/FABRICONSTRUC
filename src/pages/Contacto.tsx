@@ -1,4 +1,14 @@
+import { useState } from 'react';
+
 const Contacto = () => {
+  const [formStatus, setFormStatus] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormStatus("Mensaje enviado correctamente ✅ (simulado)");
+    // Aquí podrías conectar con una API real si lo deseas
+  };
+
   return (
     <section className="px-6 py-12 bg-white">
       <div className="max-w-4xl mx-auto text-gray-800">
@@ -9,7 +19,8 @@ const Contacto = () => {
           por los siguientes medios:
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Información de contacto */}
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Información de Contacto</h3>
             <ul className="text-gray-600 space-y-3">
@@ -32,6 +43,7 @@ const Contacto = () => {
             </ul>
           </div>
 
+          {/* Mapa de Google */}
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Mapa (Google)</h3>
             <iframe
@@ -42,6 +54,56 @@ const Contacto = () => {
               loading="lazy"
             ></iframe>
           </div>
+        </div>
+
+        {/* Formulario de contacto */}
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+          <h3 className="text-2xl font-semibold mb-4 text-center">Escríbenos</h3>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label htmlFor="nombre" className="block font-medium text-sm mb-1">Nombre</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                required
+                className="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="correo" className="block font-medium text-sm mb-1">Correo</label>
+              <input
+                id="correo"
+                name="correo"
+                type="email"
+                required
+                className="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="mensaje" className="block font-medium text-sm mb-1">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows={4}
+                required
+                className="w-full border rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="bg-yellow-400 text-gray-900 font-semibold px-6 py-2 rounded hover:bg-yellow-500 transition"
+            >
+              Enviar mensaje
+            </button>
+
+            {formStatus && (
+              <p className="text-green-600 text-sm mt-2">{formStatus}</p>
+            )}
+          </form>
         </div>
       </div>
     </section>
