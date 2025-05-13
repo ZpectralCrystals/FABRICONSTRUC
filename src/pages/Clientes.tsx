@@ -24,7 +24,7 @@ const clientes = [
 
 const Clientes = () => {
   return (
-    <section className="py-12 px-4 bg-gray-100">
+    <section className="py-12 px-4 ">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Nuestros Clientes</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {clientes.map((cliente, index) => (
