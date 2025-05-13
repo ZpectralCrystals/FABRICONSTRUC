@@ -1,36 +1,36 @@
 import { Link } from "react-router-dom";
 
-// Lista estática de servicios
+// Lista estática de servicios con rutas únicas
 const servicios = [
   {
+    id: "obras-civiles",
     nombre: "Obras Civiles",
     imagen: "/servicios/obras-civiles.jpg",
     descripcion: "Construcción, remodelación y mantenimiento de infraestructuras civiles.",
-    ruta: "/servicios",
   },
   {
+    id: "estructuras-metalicas",
     nombre: "Estructuras Metálicas",
     imagen: "/servicios/estructuras-metalicas.jpg",
     descripcion: "Fabricación y montaje de estructuras metálicas industriales.",
-    ruta: "/servicios",
   },
   {
+    id: "tuberias-industriales",
     nombre: "Tuberías Industriales",
     imagen: "/servicios/tuberias-industriales.jpg",
     descripcion: "Instalación y termofusión de tuberías HDPE y acero.",
-    ruta: "/servicios",
   },
   {
+    id: "ingenieria",
     nombre: "Ingeniería y Diseño",
     imagen: "/servicios/ingenieria.jpg",
     descripcion: "Planos, levantamientos topográficos y soluciones estructurales.",
-    ruta: "/servicios",
   },
   {
+    id: "personal-tecnico",
     nombre: "Soporte Técnico",
     imagen: "/servicios/personal-tecnico.jpg",
     descripcion: "Personal calificado en construcción, instalaciones y mantenimiento.",
-    ruta: "/servicios",
   },
 ];
 
@@ -46,7 +46,7 @@ const ServiciosCards = () => {
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {servicios.map((servicio, index) => (
           <Link
-            to={servicio.ruta}
+            to={`/servicio/${servicio.id}`}
             key={index}
             className="bg-white border border-gray-200 p-6 rounded-md shadow hover:shadow-lg transition duration-300 flex flex-col items-center text-center"
           >
