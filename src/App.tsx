@@ -9,11 +9,12 @@ import Contacto from './pages/Contacto';
 import ServiciosCard from './pages/ServiciosCard';
 import DetalleServicio from './pages/DetalleServicio';
 import Clientes from './pages/Clientes';
-
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="font-sans flex flex-col min-h-screen">
+      <ScrollToTop />
       <Navbar />
       <main className="flex-grow">
         <Routes>
