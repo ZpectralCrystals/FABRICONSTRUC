@@ -6,7 +6,7 @@ const Home = () => {
       {/* HERO */}
       <section className="bg-gray-900 text-white text-center py-20 px-6">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Soluciones Integrales en Infraestructura
+          Soluciones Integrales en Infraestructura XD 
         </h1>
         <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
           En FABRICONSTRUC brindamos soporte a industrias en fabricación metálica, obras civiles,
